@@ -411,6 +411,18 @@
  - tail /var/log/dmesg: mostrar eventos inherentes al proceso de carga del kernel.
  - tail /var/log/messages: mostrar los eventos del sistema.
 
+## Gestor de ventanas Screen (multiplexación de terminales)
+
+- screen -list: Listar los screen existentes del usuario
+- screen -S <nombre>: Inicia un nuevo screen con el nombre <name>
+- screen -D <nombre o id>: Libera un screen que esté en uso por otro usuario
+- screen -r <nombre o id>: Retoma un screen en el terminal actual
+- screen -dmS <nombre> <comando> <args>: Inicia un nuevo screen de forma desprendida y ejecuta el comando indicado
+- (dentro de screen) Ctrl+a d: Libera el screen actual
+- (dentro de screen) Ctrl+a n: Te mueves al siguiente screen
+- (dentro de screen) Ctrl+a p: Te mueves al screen anterior
+- (dentro de screen) Ctrl+a k: Destruye el screen actual
+
 ## Otros comandos útiles
 
  - apropos …keyword: mostrar una lista de comandos que pertenecen a las palabras claves de un programa; son útiles cuando tú sabes qué hace tu programa, pero de sconoces el nombre del comando.
